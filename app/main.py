@@ -87,7 +87,3 @@ class DeliveryDrone(FlyingRobot):
             self
     ) -> None:
         self.current_load = None
-
-
-robot = BaseRobot("Michael", 40)
-print(robot.get_info())
