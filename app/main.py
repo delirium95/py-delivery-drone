@@ -37,8 +37,8 @@ class BaseRobot:
 
     def get_info(
             self
-    ) -> None:
-        print(f"Robot: {self.name}, Weight: {self.weight}")
+    ) -> str:
+        return f"Robot: {self.name}, Weight: {self.weight}"
 
 
 class FlyingRobot(BaseRobot):
@@ -87,3 +87,7 @@ class DeliveryDrone(FlyingRobot):
             self
     ) -> None:
         self.current_load = None
+
+
+robot = BaseRobot("Michael", 40)
+print(robot.get_info())
